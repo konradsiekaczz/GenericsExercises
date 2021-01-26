@@ -26,13 +26,13 @@ public class Generics {
         }
     }
 
-    static  void  modernJavaStyle(){
+    static void modernJavaStyle() {
         List<String> stringList = new ArrayList<String>();
 
         stringList.add("first");
         stringList.add("second");
 
-//        stringList.add(new Integer(3));// Compilation error!
+        //stringList.add(new Integer(3));// Compilation error!
 
         //stringList.add(2); //this is parametrized list, we can't put int in to it.
 

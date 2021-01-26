@@ -1,4 +1,4 @@
-public class Exercises2 <T, S>{
+public class Exercises2<T, S> {
     final T filedTypeT;
     final S fieldTypeS;
 
@@ -20,4 +20,8 @@ N - Number
 T - Type
 V - Value
 S, U, V etc. - second, third etc. element after 'T'.
+
+Compile time interested about generics type, in runt time they are deleting.
  */
+
+
