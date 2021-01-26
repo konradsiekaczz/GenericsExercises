@@ -3,14 +3,9 @@ import org.junit.Test;
 
 public class Exercise2Test {
 
-    public static void main(String[] args) {
-        Exercise2Test exercise2Test = new Exercise2Test();
-
-        exercise2Test.test_exercise2_class_with_two_parametrized_type();
-    }
 
     @Test
-    public void test_exercise2_class_with_two_parametrized_type(){
+    public void should_return_true_for_type_of_field_in_generic_class_and_type_of_parameter_pass_into_constructor(){
         //arrange
         String type1 = "test value";
         char[] type2 = new char[]{'t', 'e', 's', 't'};
@@ -18,5 +13,16 @@ public class Exercise2Test {
 
         //assert
         Assert.assertTrue(exercises2.filedTypeT.equals(type1) && exercises2.fieldTypeS == type2);
+    }
+
+    @Test
+   public void should_return_true_for_type_of_field_in_generic_class_and_type_of_parameter_pass_into_constructor2(){
+        //arrange
+        Integer integer = 2;
+        Object object = new Object();
+        Exercises2<Integer, Object> exercises2 = new Exercises2<Integer, Object>(integer, object);
+
+        //assert
+        Assert.assertTrue(exercises2.filedTypeT.equals(integer) && exercises2.fieldTypeS == object);
     }
 }
