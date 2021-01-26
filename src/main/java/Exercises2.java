@@ -9,5 +9,15 @@ public class Exercises2 <T, S>{
     public Exercises2(T filedTypeT, S fieldTypeS) {
         this.filedTypeT = filedTypeT;
         this.fieldTypeS = fieldTypeS;
+//        T[] array = new T[10]; // we can't create array of generic type Compilation error!
     }
 }
+
+/*Convenction of name's:
+E - Element
+K - Key
+N - Number
+T - Type
+V - Value
+S, U, V etc. - second, third etc. element after 'T'.
+ */
