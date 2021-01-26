@@ -24,7 +24,7 @@ public class Exercise3 {
         System.out.println(cloneSinger(new ElvisPresley()));
     }
 
-    private static <T extends Singer & Clonable> Clonable cloneSinger(Clonable clonable){
+    private static <T extends Singer & Clonable> Clonable cloneSinger(T clonable){
         return clonable.clone();
     }
 
