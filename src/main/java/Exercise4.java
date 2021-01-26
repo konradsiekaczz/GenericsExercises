@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
 
-public class Exercise5 {
+public class Exercise4 {
 
     static class Singer {
         private final String genreMusic;
